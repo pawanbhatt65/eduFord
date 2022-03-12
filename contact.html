@@ -1,0 +1,111 @@
+﻿<html>
+
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>University Website Design - Easy Turorials</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,200;1,300;1,700&display=swap"
+    rel="stylesheet">
+  <linl rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/f7950e1a81.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-window-close" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="Blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTECT</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+
+  </section>
+
+<!---------------contact us---------------->
+  
+  <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3488.1047521497703!2d79.52220580363327!3d29.043482712945128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0879caccbe18d%3A0xb3ff5708df5837ca!2sJan%20seva%20kendra%20(PANKAJ%20BHATT)!5e0!3m2!1sen!2sin!4v1632509762123!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <div>
+          <i class="fas fa-home"></i>
+          <span>
+            <h5>xyz road abd building</h5>
+            <p>Bangalore, Karnataka, India</p>
+          </span>
+        </div>
+        <div>
+          <i class="fas fa-phone-alt"></i>
+          <span>
+            <h5>+91 9999333355</h5>
+            <p>Monday to Saturday, 10AM to 8PM</p>
+          </span>
+        </div>
+        <div>
+          <i class="fas fa-envelope"></i>
+          <span>
+            <h5></h5>jdjhghjghj.com</h5>
+            <p>Email us your query</p>
+          </span>
+        </div>
+      </div>
+      <div class="contact-col">
+        <from action="formhandlet.php" method="post">
+          <input type="text" name="name" placeholder="Enter your name" required>
+          <input type="email" name="email" placeholder="Enter Email Address" required>
+          <input type="text" name="subject" placeholder="Enter your subject" required>
+          <textarea rows="5" name="message" placeholder="Massage" required></textarea>
+          <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </from>
+      </div>
+    </div>
+  </section>
+
+  <!----------footer---------->
+
+
+  <section class="footer">
+    <h1>About Us</h1>
+    <p>This article is about the U.S. state. For the capital of the United States, see Washington, <br>D.C. For other
+      uses, see Washington.</p>
+    <div class="icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram-square"></i>
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+  </section>
+
+
+
+  <!-------JavaScript for Toggle Menu-------->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.display = "block";
+    }
+    function hideMenu() {
+      navLinks.style.display = "none";
+    }
+  </script>
+
+
+</body>
+
+</html>
